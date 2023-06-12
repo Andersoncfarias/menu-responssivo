@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responssivo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <!--div com logo-->
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <!--aqui os link das páginas-->
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#conteudo" class="nav-link">Conteudo</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <!-- div com botão para menu-->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg"</button>
+            </div>
+        </nav>
+        <!--menu do botão quando tela menor-->
+        <div class="mobile-menu">
+            <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#conteudo" class="nav-link">Conteudo</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- divs com conteudo da página-->
+    <div class="inicio" id="inicio">
+        <h1>Inicio</h1>
+    </div>
+    <div class="sobre" id="sobre">
+        <h1>Sobre</h1>
+    </div>
+    <div class="conteudo" id="conteudo">
+        <h1>Conteudo</h1>
+    </div>
+    <div class="contato" id="contato">
+        <h1>contato</h1>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

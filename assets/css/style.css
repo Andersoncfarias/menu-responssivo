@@ -1,0 +1,120 @@
+/*aqui eu zero as margens padrão */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;   
+    position: fixed;
+    width: 100vw;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between; /*distribui os itens igualmente no espaço disponível. */
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: beige;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+/*formata os itens dos links */
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
+    display: none; /*esconde botão */
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/* conteudo pagina */
+.inicio{
+    display: flex;
+    align-items: center;
+    background-color: #5e5e5e;
+    height: 100vh;
+}
+.sobre{
+    display: flex;
+    align-items: center;
+    background-color: #6f6f6f;
+    height: 100vh;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    background-color: #828282;
+    height: 100vh;
+}
+.contato{
+    display: flex;
+    align-items: center;
+    background-color: #aaaaaa;
+    height: 100vh;
+}
+
+/*fim conteudo página */
+
+/* definindo regras conforme tamanho da tela */
+@media  screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none; /*esconte elementos dos link */
+    }
+    
+    .mobile-menu-icon{
+        display: block; /*mostra botão para menu */
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;  /*muda cursor quando passado acima */
+    }
+    /* defição do menu para mobile */
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;  /*class que vai ser manipulado no javascript*/
+    }
+    
+}
